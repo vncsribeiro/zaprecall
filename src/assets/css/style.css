@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #FB6B6B;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home * {
+    margin-bottom: 30px;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home h1 {
+    font-family: "Righteous", cursive;
+    font-size: 36px;
+    color: white;
+}
+
+.home img {
+   width: 136px;
+   height: 161px;
+}
+
+.home button {
+    width: 246px;
+    height: 54px;
+    padding: 16px 22px;
+    border-radius: 5px;
+    color: #D70900;
+    border: 1px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
