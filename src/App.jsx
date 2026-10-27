@@ -1,18 +1,17 @@
 import { useState } from 'react'
 import logo from './assets/images/logo.png'
-
+import Playground from './components/Playground/Playground';
 
 function App() {
-  
+  const [visible, setVisible] = useState(true);
 
   return (
-    <>
-      <div className="home">
-          <img src={logo} alt="logo"/>
-          <h1>Zap Recall </h1>
-          <button>Iniciar recall!</button>
-      </div>   
-    </>
+    visible ? 
+    (<div className="home">
+      <img src={logo} alt="logo"/>
+      <h1>Zap Recall </h1>
+      <button onClick={() => setVisible(false)}>Iniciar recall!</button>
+    </div>) : <Playground />   
   )
 }
 
