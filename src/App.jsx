@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import logo from './assets/images/logo.png'
-import Playground from './components/Playground/Playground';
+import Playground from './components/Playground';
 
 function App() {
   const [visible, setVisible] = useState(true);

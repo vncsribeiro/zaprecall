@@ -16,6 +16,8 @@ body {
 }
 
 .home {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,8 +31,8 @@ body {
 }
 
 .home img {
-   width: 136px;
-   height: 161px;
+    width: 136px;
+    height: 161px;
 }
 
 .home button {
@@ -44,3 +46,54 @@ body {
     cursor: pointer;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    color: white;
+    font-family: 'Righteous';
+    gap: 15px;
+    margin: 60px;
+}
+
+.header img {
+    width: 52px;
+    height: 60px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.main img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.flashcard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    width: 400px;
+    height: 70px;
+    border-radius: 5px;
+    font-family: 'Righteous';
+    margin: 6px;
+    font-size: 18px;
+    padding: 10px;
+    color: #333333;
+}
