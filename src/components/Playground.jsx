@@ -2,13 +2,19 @@ import logo from '../assets/images/logo.png'
 import data from '../data/data'
 import Flashcard from './Flashcard'
 
+const deck = [];
+
+function createDeck() {
+    data.forEach((value) => {
+        deck.push({...value})
+    });
+
+    deck.sort(() => Math.random() - 0.5);
+}
+
+createDeck();
+
 export default function Playground() {
-    
-    function shuffle() {
-        return Math.random() - 0.5
-    }
-    
-    data.sort(shuffle);
 
     return (
         
