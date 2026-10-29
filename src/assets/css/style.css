@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     --cor-vermelha: #FF3030;
-    --cor-amarelha: #FF922E;
+    --cor-amarela: #FF922E;
     --cor-verde: #2EBE34;
 }
 
@@ -159,7 +159,7 @@ body {
 }
 
 .button-answer.almost {
-    background-color: var(--cor-amarelha);
+    background-color: var(--cor-amarela);
 }
     
 .button-answer.zap {
@@ -171,7 +171,21 @@ body {
 }
 
 ion-icon {
-    color: var(--cor-vermelha);
     width: 30px;
     height: 30px;
+}
+
+.answered-error {
+    color: var(--cor-vermelha);
+    text-decoration: line-through;
+}
+
+.answered-almost {
+    color: var(--cor-amarela);
+    text-decoration: line-through;
+}
+
+.answered-zap {
+    color: var(--cor-verde);
+    text-decoration: line-through;
 }

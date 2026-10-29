@@ -42,11 +42,11 @@ export default function Flashcard({ index, question, answer }) {
 
     function changeIcon(isAnswered) {
         if(isAnswered === 'error') {
-            return <ion-icon name="close-circle"></ion-icon>
+            return <ion-icon name="close-circle" style={{color: 'var(--cor-vermelha)'}}></ion-icon>
         } else if (isAnswered === 'almost') {
-            return <ion-icon name="help-circle"></ion-icon>
+            return <ion-icon name="help-circle" style={{color: 'var(--cor-amarelha)'}}></ion-icon>
         } else {
-            return <ion-icon name="checkmark-circle"></ion-icon>
+            return <ion-icon name="checkmark-circle" style={{color: 'var(--cor-verde)'}}></ion-icon>
         }
     }
 
@@ -54,7 +54,7 @@ export default function Flashcard({ index, question, answer }) {
         <>
             {isAnswered !== null 
             ? (
-                <div className="flashcard face-down">
+                <div className={`flashcard face-down answered-${isAnswered}`}>
                     {`Pergunta ${index + 1}`}
                     {changeIcon(isAnswered)}
                 </div>
