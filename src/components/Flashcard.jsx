@@ -1,15 +1,34 @@
 import data from "../data/data";
 import btnPlay from "../assets/images/play-outline.svg"
-import {useState} from 'react';
+import seta from "../assets/images/setinha.png"
+import { useState } from 'react';
 
 
-export default function Flashcard({index}) {
+function ShowQuestion({question, answer}) {
+    const [isClicked, setIsClicked] = useState(false);
+
+    return (
+        <>
+            <div className="flashcard face-up">
+                {!isClicked ? question : answer}
+                <img src={seta} onClick={() => setIsClicked(true)}/>
+            </div>
+        </>
+    );
+}
+
+export default function Flashcard({ index, question, answer}) {
     const [tapped, setTapped] = useState(false);
     
     return (
-        <div className="flashcard" onClick={() => !tapped}>
-           {`Pergunta ${index + 1}`}
-           <img src={btnPlay}/>
-        </div>
+        <>
+            {!tapped ? (
+                <div className="flashcard face-down" onClick={() => setTapped(true)}>
+                    {`Pergunta ${index + 1}`}
+                    <img src={btnPlay} />
+                </div>) : <ShowQuestion question={question} answer={answer}/>
+            }
+        </>
+        
     );
 }

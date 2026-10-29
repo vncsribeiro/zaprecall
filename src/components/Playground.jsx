@@ -15,7 +15,7 @@ function createDeck() {
 createDeck();
 
 export default function Playground() {
-
+    
     return (
         
         <div className="container">
@@ -24,10 +24,12 @@ export default function Playground() {
                 <h1>Zap Recall</h1>
             </div>
             <div className='main'>
-                {data.map((value, index) => 
+                {deck.map((value, index) => 
                 <Flashcard 
                 key={index} 
                 index={index}
+                question={value.question}
+                answer={value.answer}
                 />)}
             </div>
         </div>
