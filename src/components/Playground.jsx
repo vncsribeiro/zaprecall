@@ -6,7 +6,7 @@ const deck = [];
 
 function createDeck() {
     data.forEach((value) => {
-        deck.push({...value})
+        deck.push({ ...value })
     });
 
     deck.sort(() => Math.random() - 0.5);
@@ -15,22 +15,22 @@ function createDeck() {
 createDeck();
 
 export default function Playground() {
-    
+
     return (
-        
+
         <div className="container">
             <div className="header">
                 <img src={logo} alt="logo" />
                 <h1>Zap Recall</h1>
             </div>
             <div className='main'>
-                {deck.map((value, index) => 
-                <Flashcard 
-                key={index} 
-                index={index}
-                question={value.question}
-                answer={value.answer}
-                />)}
+                {deck.map((value, index) =>
+                    <Flashcard
+                        key={index}
+                        index={index}
+                        question={value.question}
+                        answer={value.answer}
+                    />)}
             </div>
         </div>
 

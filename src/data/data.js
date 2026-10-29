@@ -1,42 +1,42 @@
  const data = [
         {
-            question: 'O que é JSX?',
-            answer: 'Uma extensão de linguagem do JavaScript',
+            question: 'Q: O que é JSX?',
+            answer: 'R: Uma extensão de linguagem do JavaScript',
             tapped: false
         },
         {
-            question: 'O React é __',
-            answer: 'uma biblioteca JavaScript para construção de interfaces',
+            question: 'Q: O React é __',
+            answer: 'R: uma biblioteca JavaScript para construção de interfaces',
             tapped: false
         },
         {
-            question: 'Componentes devem iniciar com __',
-            answer: 'letra maiúscula',
+            question: 'Q: Componentes devem iniciar com __',
+            answer: 'R: letra maiúscula',
             tapped: false
         },
         {
-            question: 'Podemos colocar __ dentro do JSX',
-            answer: 'expressões',
+            question: 'Q: Podemos colocar __ dentro do JSX',
+            answer: 'R: expressões',
             tapped: false
         },
         {
-            question: 'O ReactDOM nos ajuda __',
-            answer: 'interagindo com a DOM para colocar componentes React na mesma',
+            question: 'Q: O ReactDOM nos ajuda __',
+            answer: 'R: interagindo com a DOM para colocar componentes React na mesma',
             tapped: false
         },
         {
-            question: 'Usamos o npm para __',
-            answer: 'Gerenciar os pacotes necessários e suas dependências',
+            question: 'Q: Usamos o npm para __',
+            answer: 'R: Gerenciar os pacotes necessários e suas dependências',
             tapped: false
         },
         {
-            question: 'Usamos props para __ ',
-            answer: 'passar diferentes informações para componentes',
+            question: 'Q: Usamos props para __ ',
+            answer: 'R: passar diferentes informações para componentes',
             tapped: false
         },
         {
-            question: 'Usamos estado (state) para __',
-            answer: 'dizer para o React quais informações quando atualizadas devem renderizar a tela novamente',
+            question: 'Q: Usamos estado (state) para __',
+            answer: 'R: dizer para o React quais informações quando atualizadas devem renderizar a tela novamente',
             tapped: false
         }
     ]
