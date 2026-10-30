@@ -1,6 +1,8 @@
 import logo from '../assets/images/logo.png'
 import data from '../data/data'
 import Flashcard from './Flashcard'
+import Sidebar from './Sidebar';
+import {useState} from 'react';
 
 const deck = [];
 
@@ -15,6 +17,7 @@ function createDeck() {
 createDeck();
 
 export default function Playground() {
+    const [result, setResult] = useState([]);
 
     return (
 
@@ -30,8 +33,10 @@ export default function Playground() {
                         index={index}
                         question={value.question}
                         answer={value.answer}
+                        
                     />)}
             </div>
+            <Sidebar />
         </div>
 
     )

@@ -36,7 +36,7 @@ function ShowQuestion({ question, answer, index, setIsAnswered }) {
     );
 }
 
-export default function Flashcard({ index, question, answer }) {
+export default function Flashcard({ index, question, answer}) {
     const [isAnswered, setIsAnswered] = useState(null);
     const [isTapped, setIsTapped] = useState(false);
 
@@ -67,6 +67,7 @@ export default function Flashcard({ index, question, answer }) {
                 </div>) : <ShowQuestion  setIsAnswered={setIsAnswered} index={index} question={question} answer={answer} />
             )
             }
+            
         </>
 
     );
