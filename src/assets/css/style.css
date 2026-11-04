@@ -191,6 +191,8 @@ ion-icon {
 }
 
 .sidebar {
+    display: flex;
+    flex-direction: column;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -198,5 +200,21 @@ ion-icon {
     height: 80px;
     background-color: white;
     text-align: center;
-    
+    font-family: 'Recursive', cursive;
+    padding-top: 10px;
+}
+
+.mensagem-final {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 130px;
+    background-color: white;
+    text-align: center;
+    font-family: 'Recursive', cursive;
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
